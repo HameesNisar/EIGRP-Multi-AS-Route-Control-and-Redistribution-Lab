@@ -66,6 +66,7 @@ router eigrp 154
 router eigrp 108
  redistribute eigrp 154
 
+```
 
 ### 🔎 Explanation
 This configuration allows redistribution between **EIGRP ASNs 108 and 154** but filters out specific subnets using **ACL 1**.  

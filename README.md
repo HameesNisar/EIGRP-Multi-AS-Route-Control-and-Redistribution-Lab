@@ -65,7 +65,6 @@ router eigrp 154
  redistribute eigrp 108 route-map box1
 router eigrp 108
  redistribute eigrp 154
-
 ```
 
 ### 🔎 Explanation

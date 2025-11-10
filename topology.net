@@ -1,0 +1,1221 @@
+autostart = False
+version = 0.8.6
+[127.0.0.1:7202]
+    workingdir = working
+    udp = 10201
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R5]]
+        console = 2105
+        aux = 2505
+        cnfg = configs\R5.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW2 2
+        f1/1 = SW3 1
+        x = -1202.37171645
+        y = -523.622366364
+        z = 1.0
+    [[ROUTER R6]]
+        console = 2106
+        aux = 2506
+        cnfg = configs\R6.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW3 2
+        x = -1400.06009999
+        y = -724.274169979
+        z = 1.0
+    [[ETHSW SW3]]
+        1 = access 1 R5 f1/1
+        2 = access 1 R6 f1/0
+        3 = access 1 R7 f1/0
+        x = -1197.66356365
+        y = -632.114790413
+        z = 1.0
+[127.0.0.1:7203]
+    workingdir = working
+    udp = 10301
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R7]]
+        console = 2107
+        aux = 2507
+        cnfg = configs\R7.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW3 3
+        x = -1044.30865787
+        y = -707.026478659
+        z = 1.0
+    [[ROUTER R8]]
+        console = 2108
+        aux = 2508
+        cnfg = configs\R8.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW4 1
+        f1/1 = SW7 2
+        x = -840.031529293
+        y = -131.715728753
+        z = 1.0
+    [[ETHSW SW4]]
+        1 = access 1 R8 f1/0
+        2 = access 1 R10 f1/0
+        3 = access 1 R9 f1/0
+        x = -914.786363288
+        y = 21.0365799265
+        z = 1.0
+[127.0.0.1:7200]
+    workingdir = working
+    udp = 10001
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R1]]
+        console = 2101
+        aux = 2501
+        cnfg = configs\R1.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW1 1
+        x = -1675.39401103
+        y = -505.899494937
+        z = 1.0
+    [[ROUTER R2]]
+        console = 2102
+        aux = 2502
+        cnfg = configs\R2.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW1 2
+        x = -1680.17070632
+        y = -256.90454557
+        z = 1.0
+    [[ETHSW SW1]]
+        1 = access 1 R1 f1/0
+        2 = access 1 R2 f1/0
+        3 = access 1 R3 f1/0
+        x = -1506.72453019
+        y = -405.497474683
+        z = 1.0
+[127.0.0.1:7201]
+    workingdir = working
+    udp = 10101
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R4]]
+        console = 2104
+        aux = 2504
+        cnfg = configs\R4.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW2 3
+        f1/1 = SW7 1
+        x = -971.345237792
+        y = -393.757359313
+        z = 1.0
+    [[ROUTER R3]]
+        console = 2103
+        aux = 2503
+        cnfg = configs\R3.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW1 3
+        f1/1 = SW2 1
+        x = -1360.95036021
+        y = -403.230447378
+        z = 1.0
+    [[ETHSW SW2]]
+        1 = access 1 R3 f1/1
+        2 = access 1 R5 f1/0
+        3 = access 1 R4 f1/0
+        x = -1205.4381669
+        y = -345.237590053
+        z = 1.0
+    [[ETHSW SW7]]
+        1 = access 1 R4 f1/1
+        2 = access 1 R8 f1/1
+        3 = access 1 R15 f1/0
+        x = -762.134559673
+        y = -260.100505063
+        z = 1.0
+[127.0.0.1:7206]
+    workingdir = working
+    udp = 10601
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R14]]
+        console = 2114
+        aux = 2514
+        cnfg = configs\R14.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW6 3
+        x = -1579.22662223
+        y = 590.565583903
+        z = 1.0
+    [[ROUTER R13]]
+        console = 2113
+        aux = 2513
+        cnfg = configs\R13.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW6 2
+        x = -1643.4915575
+        y = 311.965512115
+        z = 1.0
+[127.0.0.1:7207]
+    workingdir = working
+    udp = 10701
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R16]]
+        console = 2116
+        aux = 2516
+        cnfg = configs\R16.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R15 f2/0
+        f1/1 = R17 f1/1
+        slot2 = PA-2FE-TX
+        f2/0 = SW8 1
+        x = -164.982756058
+        y = -497.22034611
+        z = 1.0
+    [[ROUTER R15]]
+        console = 2115
+        aux = 2515
+        cnfg = configs\R15.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW7 3
+        f1/1 = R17 f1/0
+        slot2 = PA-2FE-TX
+        f2/0 = R16 f1/0
+        x = -401.468037432
+        y = -289.012193309
+        z = 1.0
+    [[ETHSW SW8]]
+        1 = access 1 R16 f2/0
+        2 = access 1 R18 f1/0
+        3 = access 1 R19 f1/0
+        4 = access 1 R20 f1/0
+        x = 297.776262021
+        y = -519.688383542
+        z = 1.0
+        hx = 8.27207793864
+        hy = -23.2010101268
+[127.0.0.1:7204]
+    workingdir = working
+    udp = 10401
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R10]]
+        console = 2110
+        aux = 2510
+        cnfg = configs\R10.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW4 2
+        f1/1 = SW5 1
+        x = -1100.4478349
+        y = 203.019335984
+        z = 1.0
+    [[ROUTER R9]]
+        console = 2109
+        aux = 2509
+        cnfg = configs\R9.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW4 3
+        x = -840.936074863
+        y = 174.8355698
+        z = 1.0
+    [[ETHSW SW5]]
+        1 = access 1 R10 f1/1
+        2 = access 1 R11 f1/0
+        3 = access 1 R12 f1/0
+        x = -1135.33766184
+        y = 364.984848098
+        z = 1.0
+[127.0.0.1:7205]
+    workingdir = working
+    udp = 10501
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R12]]
+        console = 2112
+        aux = 2512
+        cnfg = configs\R12.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW5 3
+        f1/1 = SW6 1
+        x = -1310.49956672
+        y = 358.676190233
+        z = 1.0
+    [[ROUTER R11]]
+        console = 2111
+        aux = 2511
+        cnfg = configs\R11.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW5 2
+        x = -1132.69761826
+        y = 504.565583902
+        z = 1.0
+    [[ETHSW SW6]]
+        1 = access 1 R12 f1/1
+        2 = access 1 R13 f1/0
+        3 = access 1 R14 f1/0
+        x = -1491.51132676
+        y = 362.156420974
+        z = 1.0
+[127.0.0.1:7218]
+    workingdir = working
+    udp = 11801
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R38]]
+        console = 2138
+        aux = 2538
+        cnfg = configs\R38.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW17 2
+        x = -706.811183182
+        y = 722.524281085
+        z = 1.0
+    [[ROUTER R37]]
+        console = 2137
+        aux = 2537
+        cnfg = configs\R37.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW17 3
+        x = -315.580735804
+        y = 669.595348897
+        z = 1.0
+[127.0.0.1:7208]
+    workingdir = working
+    udp = 10801
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ETHSW SW12]]
+        1 = access 1 R17 f2/0
+        2 = access 1 R27 f1/0
+        3 = access 1 R28 f1/0
+        x = 67.5050506339
+        y = -78.4020202536
+        z = 1.0
+    [[ROUTER R17]]
+        console = 2117
+        aux = 2517
+        cnfg = configs\R17.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R15 f1/1
+        f1/1 = R16 f1/1
+        slot2 = PA-2FE-TX
+        f2/0 = SW12 1
+        x = -151.526911935
+        y = -235.195959493
+        z = 1.0
+        hx = 13.4142135624
+        hy = -27.8284271247
+    [[ROUTER R18]]
+        console = 2118
+        aux = 2518
+        cnfg = configs\R18.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW8 2
+        f1/1 = SW9 1
+        x = 473.735064736
+        y = -690.884343035
+        z = 1.0
+    [[ETHSW SW9]]
+        1 = access 1 R18 f1/1
+        2 = access 1 R21 f1/0
+        3 = access 1 R22 f1/0
+        x = 656.227055509
+        y = -639.279220614
+        z = 1.0
+[127.0.0.1:7216]
+    workingdir = working
+    udp = 11601
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ETHSW SW16]]
+        1 = access 1 R33 f1/1
+        2 = access 1 R35 f1/0
+        3 = access 1 R36 f1/0
+        x = -458.134559673
+        y = 313.556349186
+        z = 1.0
+    [[ROUTER R34]]
+        console = 2134
+        aux = 2534
+        cnfg = configs\R34.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW13 3
+        x = -162.377633636
+        y = 193.001764298
+        z = 1.0
+    [[ROUTER R33]]
+        console = 2133
+        aux = 2533
+        cnfg = configs\R33.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW13 2
+        f1/1 = SW16 1
+        x = -495.51976926
+        y = 179.747258045
+        z = 1.0
+[127.0.0.1:7213]
+    workingdir = working
+    udp = 11301
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ETHSW SW14]]
+        1 = access 1 R28 f1/1
+        2 = access 1 R29 f1/0
+        3 = access 1 R30 f1/0
+        x = 428.634992949
+        y = 195.313708499
+        z = 1.0
+    [[ETHSW SW13]]
+        1 = access 1 R27 f1/1
+        2 = access 1 R33 f1/0
+        3 = access 1 R34 f1/0
+        x = -311.347763109
+        y = 72.7695526217
+        z = 1.0
+    [[ROUTER R27]]
+        console = 2127
+        aux = 2527
+        cnfg = configs\R27.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW12 2
+        f1/1 = SW13 1
+        x = -102.608081014
+        y = 10.6101730552
+        z = 1.0
+    [[ROUTER R28]]
+        console = 2128
+        aux = 2528
+        cnfg = configs\R28.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW12 3
+        f1/1 = SW14 1
+        x = 308.967604156
+        y = 34.9946216226
+        z = 1.0
+[127.0.0.1:7209]
+    workingdir = working
+    udp = 10901
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ETHSW SW10]]
+        1 = access 1 R20 f1/1
+        2 = access 1 R23 f1/0
+        3 = access 1 R24 f1/0
+        x = 642.680807591
+        y = -173.875108319
+        z = 1.0
+    [[ROUTER R19]]
+        console = 2119
+        aux = 2519
+        cnfg = configs\R19.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW8 3
+        x = 536.597979746
+        y = -515.019335984
+        z = 1.0
+    [[ROUTER R20]]
+        console = 2120
+        aux = 2520
+        cnfg = configs\R20.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW8 4
+        f1/1 = SW10 1
+        x = 492.577777211
+        y = -352.350288426
+        z = 1.0
+[127.0.0.1:7212]
+    workingdir = working
+    udp = 11201
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R25]]
+        console = 2125
+        aux = 2525
+        cnfg = configs\R25.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW11 2
+        x = 1110.45706961
+        y = -240.443650814
+        z = 1.0
+    [[ROUTER R26]]
+        console = 2126
+        aux = 2526
+        cnfg = configs\R26.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW11 3
+        x = 1093.42763236
+        y = 109.847763109
+        z = 1.0
+[127.0.0.1:7210]
+    workingdir = working
+    udp = 11001
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R22]]
+        console = 2122
+        aux = 2522
+        cnfg = configs\R22.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW9 3
+        x = 932.602163828
+        y = -545.327993849
+        z = 1.0
+    [[ROUTER R21]]
+        console = 2121
+        aux = 2521
+        cnfg = configs\R21.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW9 2
+        x = 907.11183182
+        y = -740.89148571
+        z = 1.0
+[127.0.0.1:7211]
+    workingdir = working
+    udp = 11101
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ETHSW SW11]]
+        1 = access 1 R24 f1/1
+        2 = access 1 R25 f1/0
+        3 = access 1 R26 f1/0
+        x = 965.832177931
+        y = -73.3137084989
+        z = 1.0
+    [[ROUTER R23]]
+        console = 2123
+        aux = 2523
+        cnfg = configs\R23.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW10 2
+        x = 735.09754647
+        y = -344.208152802
+        z = 1.0
+    [[ROUTER R24]]
+        console = 2124
+        aux = 2524
+        cnfg = configs\R24.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW10 3
+        f1/1 = SW11 1
+        x = 744.587878479
+        y = -0.804040507065
+        z = 1.0
+        hx = 12.0
+        hy = -33.4852813742
+[127.0.0.1:7215]
+    workingdir = working
+    udp = 11501
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R31]]
+        console = 2131
+        aux = 2531
+        cnfg = configs\R31.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW15 2
+        x = 383.847763109
+        y = 609.369952153
+        z = 1.0
+    [[ROUTER R32]]
+        console = 2132
+        aux = 2532
+        cnfg = configs\R32.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW15 3
+        x = 608.170706324
+        y = 597.95573859
+        z = 1.0
+[127.0.0.1:7217]
+    workingdir = working
+    udp = 11701
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ETHSW SW17]]
+        1 = access 1 R35 f1/1
+        2 = access 1 R38 f1/0
+        3 = access 1 R37 f1/0
+        x = -474.134559673
+        y = 571.556349186
+        z = 1.0
+    [[ROUTER R35]]
+        console = 2135
+        aux = 2535
+        cnfg = configs\R35.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW16 2
+        f1/1 = SW17 1
+        x = -497.688383542
+        y = 423.352052723
+        z = 1.0
+    [[ROUTER R36]]
+        console = 2136
+        aux = 2536
+        cnfg = configs\R36.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW16 3
+        x = -250.303607231
+        y = 413.612265096
+        z = 1.0
+[127.0.0.1:7214]
+    workingdir = working
+    udp = 11401
+    [[7200]]
+        image = C:\Users\freet\GNS3\Images\IOS\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+        ghostios = True
+    [[ETHSW SW15]]
+        1 = access 1 R30 f1/1
+        2 = access 1 R31 f1/0
+        3 = access 1 R32 f1/0
+        x = 464.634992949
+        y = 457.313708499
+        z = 1.0
+    [[ROUTER R30]]
+        console = 2130
+        aux = 2530
+        cnfg = configs\R30.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW14 3
+        f1/1 = SW15 1
+        x = 571.391918986
+        y = 307.161471608
+        z = 1.0
+    [[ROUTER R29]]
+        console = 2129
+        aux = 2529
+        cnfg = configs\R29.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = SW14 2
+        x = 267.17871555
+        y = 284.558113484
+        z = 1.0
+[GNS3-DATA]
+    configs = configs
+    workdir = working
+    m11 = 0.5
+    m22 = 0.5
+    [[NOTE 1]]
+        text = "192.178.178.0/24"
+        x = -768.0
+        y = 771.499999999
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 2]]
+        text = "RIP \nRIP\nRIP\nRIP\nRIP"
+        x = -188.0
+        y = 721.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 3]]
+        text = "7.0.0.0/8"
+        x = -1482.94617613
+        y = 302.946176131
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 4]]
+        text = "91.0.0.0/8"
+        x = -1808.0
+        y = -500.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 5]]
+        text = "RIP \nE-101\nE-102\nE-155"
+        x = -1822.0
+        y = 641.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 6]]
+        text = "E-108"
+        x = -986.0
+        y = 555.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 7]]
+        text = "E-123\nE-125/E-189/E-103/E-190"
+        x = -916.790980647
+        y = -789.842279199
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 8]]
+        text = "E-124"
+        x = -1039.91082169
+        y = 305.963853348
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 9]]
+        text = "RIP"
+        x = -1856.0
+        y = -500.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 10]]
+        text = "E-134 \nE-165\nE-154"
+        x = -1822.0
+        y = -206.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 11]]
+        text = "E-154"
+        x = -1191.91082169
+        y = -734.036146651
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 12]]
+        text = "18.0.0.0/8"
+        x = -285.261976671
+        y = -232.343145751
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 13]]
+        text = "E-125"
+        x = 24.0
+        y = 249.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 14]]
+        text = "E-108"
+        x = -1203.91082169
+        y = -270.036146651
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 15]]
+        text = "154.18.18.0/24 \n154.18.20.0/24\n154.18.22.0/24\n154.18.24.0/24"
+        x = 1166.1160159
+        y = 85.6492782986
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 16]]
+        text = "50.0.0.0/8\n51.0.0.0/8"
+        x = -1051.78593001
+        y = -791.256492761
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 17]]
+        text = "E-167"
+        x = -269.910821694
+        y = -338.036146651
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 18]]
+        text = "E-165"
+        x = 514.089178305
+        y = 139.963853349
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 19]]
+        text = "E-189"
+        x = 582.089178305
+        y = 431.963853348
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 20]]
+        text = "132.190.0.0/16 \n132.191.0.0/16\n132.192.0.0/16"
+        x = -1742.0
+        y = -206.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 21]]
+        text = "E-155"
+        x = -721.910821694
+        y = -352.036146651
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 22]]
+        text = "RIP"
+        x = 675.46717088
+        y = -719.214862201
+    [[NOTE 23]]
+        text = "E-190"
+        x = -301.910821694
+        y = -4.03614665136
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 24]]
+        text = "1.0.0.0/8"
+        x = -1511.96551211
+        y = -474.402020254
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 25]]
+        text = "192.168.172.0/29 \n192.168.172.16/29\n192.168.172.32/29"
+        x = 1185.63073453
+        y = -265.235064736
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 26]]
+        text = "172.189.0.0/16 \n172.190.0.0/16\n172.191.0.0/16\n172.192.0.0/16"
+        x = 298.27416998
+        y = 664.47474683
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 27]]
+        text = "191.14.2.0/23 \n191.14.4.0/23\n191.14.6.0/23"
+        x = 610.991990773
+        y = 649.646319705
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 28]]
+        text = "5.0.0.0/8"
+        x = -991.806132548
+        y = -43.0883117545
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 29]]
+        text = "6.0.0.0/8"
+        x = -1065.98989873
+        y = 339.514718626
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 30]]
+        text = "92.0.0.0/8\n93.0.0.0/8"
+        x = -1406.41038842
+        y = -823.298123321
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 31]]
+        text = "E-125"
+        x = -1465.91082169
+        y = 265.963853349
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 32]]
+        text = "E-191"
+        x = -369.910821694
+        y = 237.963853348
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 33]]
+        text = "13.0.0.0/8"
+        x = 642.360389693
+        y = -693.816233816
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 34]]
+        text = "2.0.0.0/8"
+        x = -1213.32085117
+        y = -304.04163056
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 35]]
+        text = "9.0.0.0/8"
+        x = 132.093362388
+        y = -123.313708499
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 36]]
+        text = "E-101"
+        x = 286.089178305
+        y = -604.036146651
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 37]]
+        text = "E-123/RIP \nE-155\nE-124\nE-154"
+        x = 1366.0
+        y = 89.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 38]]
+        text = "192.168.16.32/27 \n192.168.17.64/27\n192.168.18.128/27"
+        x = 978.736290225
+        y = -783.398628384
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 39]]
+        text = "4.0.0.0/8"
+        x = -754.391918986
+        y = -320.402020254
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 40]]
+        text = "14.0.0.0/8"
+        x = 595.289321881
+        y = -240.058874503
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 41]]
+        text = "RIP \nE-190\nE-108"
+        x = 1422.0
+        y = -262.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 42]]
+        text = "E-123"
+        x = -989.910821694
+        y = -6.03614665133
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 43]]
+        text = "E-134"
+        x = -517.910821694
+        y = 507.963853348
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 44]]
+        text = "16.0.0.0/8"
+        x = 508.134992949
+        y = 181.313708499
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 45]]
+        text = "12.0.0.0/8"
+        x = -614.634559673
+        y = 541.556349186
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 46]]
+        text = "E-101 \nE-103\nE-190"
+        x = 790.0
+        y = 649.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 47]]
+        text = "E-154 \nE-192/E-103/E-189/E-134\nE-167"
+        x = 1218.0
+        y = -784.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 48]]
+        text = "E-102"
+        x = 628.089178305
+        y = -274.036146651
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 49]]
+        text = "E-189 \nE-189"
+        x = -1840.0
+        y = 211.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 50]]
+        text = "197.168.134.0/24"
+        x = -202.284271247
+        y = 246.07568517
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 51]]
+        text = "17.0.0.0/8"
+        x = 548.134992949
+        y = 463.313708499
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 52]]
+        text = "190.1.190.0/23 \n190.1.192.0/23\n190.1.194.0/23"
+        x = 1011.94949366
+        y = -571.166088965
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 53]]
+        text = "55.22.0.0/23 \n55.34.0.0/23\n55.44.0.0/23\n55.56.0.0/23\n55.68.0.0/23"
+        x = -354.0
+        y = 723.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 54]]
+        text = "15.0.0.0/8"
+        x = 919.632467632
+        y = -129.875108319
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 55]]
+        text = "11.0.0.0/8"
+        x = -398.634559673
+        y = 265.556349186
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 56]]
+        text = "10.0.0.0/8"
+        x = -321.865007051
+        y = 21.313708499
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 57]]
+        text = "E-189"
+        x = -842.0
+        y = 769.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 58]]
+        text = "RIP"
+        x = 152.007142675
+        y = -146.139610307
+    [[NOTE 59]]
+        text = "E-103 \nE-134"
+        x = -722.0
+        y = 231.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 60]]
+        text = "E-167 \nE-124\nE-192\nE-125"
+        x = 214.0
+        y = 663.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 61]]
+        text = "E-191 \nE-125\nE-102"
+        x = 1212.0
+        y = -566.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 62]]
+        text = "RIP \nE-155\nE-101\nE-102"
+        x = -72.0
+        y = 457.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 63]]
+        text = "3.0.0.0/8"
+        x = -1208.55129855
+        y = -706.644660941
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 64]]
+        text = "199.167.210.0/24 \n199.167.211.0/24"
+        x = -1756.0
+        y = 211.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 65]]
+        text = "E-103"
+        x = 944.089178305
+        y = -164.036146651
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 66]]
+        text = "E-192"
+        x = -1487.91082169
+        y = -510.036146651
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#00ff00"
+    [[NOTE 67]]
+        text = "62.0.0.0/8 \n63.0.0.0/8"
+        x = -855.999999999
+        y = 231.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 68]]
+        text = "189.154.0.0/16"
+        x = -1172.0
+        y = 557.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 69]]
+        text = "8.0.0.0/8"
+        x = 266.318759133
+        y = -572.0
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 70]]
+        text = "167.147.0.0/16 \n167.157.0.0/16\n167.167.0.0/16\n167.177.0.0/16"
+        x = -1750.0
+        y = 641.5
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 71]]
+        text = "19.0.0.0/8"
+        x = -434.776695297
+        y = -424.100505063
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 72]]
+        text = "111.111.0.0/16 \n111.113.0.0/16\n111.115.0.0/16\n111.117.0.0/16"
+        x = -268.769552622
+        y = 458.450360213
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#0000ff"
+    [[NOTE 73]]
+        text = "20.0.0.0/8"
+        x = -136.994949366
+        y = -367.272077939
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#aa0000"
+    [[NOTE 74]]
+        text = "E-130\nE-191"
+        x = -1480.97893091
+        y = -823.298123321
+        font = "MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"
+        color = "#ff0000"
+    [[SHAPE 1]]
+        type = ellipse
+        x = -252.0
+        y = -880.0
+        width = 932.0
+        height = 706.0
+        border_style = 2
+    [[SHAPE 2]]
+        type = ellipse
+        x = 412.0
+        y = -444.0
+        width = 528.0
+        height = 544.0
+        border_style = 2
+    [[SHAPE 3]]
+        type = ellipse
+        x = 140.0
+        y = -32.0
+        width = 592.0
+        height = 486.0
+        border_style = 2
+    [[SHAPE 4]]
+        type = ellipse
+        x = -534.0
+        y = -86.0
+        width = 542.0
+        height = 410.0
+        border_style = 2
+    [[SHAPE 5]]
+        type = ellipse
+        x = 334.0
+        y = 274.0
+        width = 420.0
+        height = 496.0
+        border_style = 2
+    [[SHAPE 6]]
+        type = ellipse
+        x = -1454.0
+        y = -880.0
+        width = 590.0
+        height = 460.0
+        border_style = 2
+    [[SHAPE 7]]
+        type = ellipse
+        x = -684.0
+        y = 150.0
+        width = 542.0
+        height = 410.0
+        border_style = 2
+    [[SHAPE 8]]
+        type = ellipse
+        x = -464.0
+        y = -548.0
+        width = 484.0
+        height = 410.0
+        border_style = 2
+    [[SHAPE 9]]
+        type = ellipse
+        x = 724.0
+        y = -272.0
+        width = 670.0
+        height = 486.0
+        border_style = 2
+    [[SHAPE 10]]
+        type = ellipse
+        x = -1418.0
+        y = -584.0
+        width = 590.0
+        height = 460.0
+        border_style = 2
+    [[SHAPE 11]]
+        type = ellipse
+        x = -1056.0
+        y = -512.0
+        width = 740.0
+        height = 470.0
+        border_style = 2
+    [[SHAPE 12]]
+        type = ellipse
+        x = -1202.0
+        y = -166.0
+        width = 606.0
+        height = 470.0
+        border_style = 2
+    [[SHAPE 13]]
+        type = ellipse
+        x = -1398.0
+        y = 146.0
+        width = 606.0
+        height = 470.0
+        border_style = 2
+    [[SHAPE 14]]
+        type = ellipse
+        x = -740.0
+        y = 498.0
+        width = 542.0
+        height = 410.0
+        border_style = 2
+    [[SHAPE 15]]
+        type = ellipse
+        x = -1800.0
+        y = 198.0
+        width = 606.0
+        height = 470.0
+        border_style = 2
+    [[SHAPE 16]]
+        type = ellipse
+        x = -1862.0
+        y = -564.0
+        width = 590.0
+        height = 460.0
+        border_style = 2

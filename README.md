@@ -7,7 +7,8 @@ The configuration showcases how to securely interconnect multiple routing domain
 ---
 
 ## 📸 Topology Screenshot
-<img width="1861" height="895" alt="topology" src="https://github.com/user-attachments/assets/c92915ee-492e-4e0e-a0b4-ef5bc494b7ef" />
+<img width="1861" height="895" alt="topology" src="https://github.com/user-attachments/assets/db0fd3a8-2b02-43d1-92df-d79fc1462f95" />
+
 
 ---
 

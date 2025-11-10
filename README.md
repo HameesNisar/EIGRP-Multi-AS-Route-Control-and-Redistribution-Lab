@@ -95,7 +95,7 @@ The filtered prefixes are those **not permitted to reach AS-154** as per the des
 ## 🧰 Tools Used
 - **GNS3 Network Simulator**
 - **Cisco IOSv Routers**
-- **Switches** (for authentication configuration)
+- **Switches** 
 - **Loopback interfaces** for testing and route advertisement
 
 ---
